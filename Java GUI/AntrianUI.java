@@ -1,21 +1,10 @@
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+import java.util.*;
+import javax.swing.*;
 import java.time.LocalDate;
-import java.util.ArrayDeque;
-import java.util.Queue;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.SwingUtilities;
 
 public class AntrianUI extends JFrame {
     private Queue<String> antrian;
@@ -30,11 +19,9 @@ public class AntrianUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // Panel for buttons
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout());
 
-        // Button to add patient to the queue
         JButton tambahButton = new JButton("Masukkan pasien ke antrian");
         tambahButton.addActionListener(new ActionListener() {
             @Override
@@ -51,7 +38,6 @@ public class AntrianUI extends JFrame {
         });
         buttonPanel.add(tambahButton);
 
-        // Button to call next patient
         JButton panggilButton = new JButton("Panggil pasien berikutnya");
         panggilButton.addActionListener(new ActionListener() {
             @Override
@@ -67,7 +53,6 @@ public class AntrianUI extends JFrame {
         });
         buttonPanel.add(panggilButton);
 
-        // Button to reset the queue
         JButton resetButton = new JButton("Reset Antrian");
         resetButton.addActionListener(new ActionListener() {
             @Override
@@ -80,17 +65,15 @@ public class AntrianUI extends JFrame {
         });
         buttonPanel.add(resetButton);
 
-        // Text area to display the queue
         antrianTextArea = new JTextArea();
         antrianTextArea.setEditable(false);
+        
         JScrollPane scrollPane = new JScrollPane(antrianTextArea);
-
-        // Add components to the frame
         add(buttonPanel, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
 
         pack();
-        setLocationRelativeTo(null); // Center the frame on the screen
+        setLocationRelativeTo(null); 
         setVisible(true);
     }
 
@@ -126,8 +109,4 @@ public class AntrianUI extends JFrame {
 }
 
 
-// import java.awt.*;
-// import java.awt.event.*;
-// import java.io.*;
-// import java.util.*;
-// import javax.swing.*;
+
