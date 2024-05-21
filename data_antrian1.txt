@@ -1,0 +1,8 @@
+Nomor Antrian: 1
+Nama Pasien: cdvdv
+Tanggal: 2024-05-21
+--------------------
+Nomor Antrian: 2
+Nama Pasien: dvdvdv
+Tanggal: 2024-05-21
+--------------------
