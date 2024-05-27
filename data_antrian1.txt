@@ -1,0 +1,24 @@
+Nomor Antrian: 1
+Nama Pasien: Budiono
+Tanggal: 2024-05-24
+--------------------
+Nomor Antrian: 2
+Nama Pasien: Setiawan
+Tanggal: 2024-05-24
+--------------------
+Nomor Antrian: 3
+Nama Pasien: Kusadi
+Tanggal: 2024-05-24
+--------------------
+Nomor Antrian: 4
+Nama Pasien: Nayla
+Tanggal: 2024-05-24
+--------------------
+Nomor Antrian: 5
+Nama Pasien: Tukiyem
+Tanggal: 2024-05-24
+--------------------
+Nomor Antrian: 6
+Nama Pasien: Retno
+Tanggal: 2024-05-24
+--------------------
